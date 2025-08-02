@@ -24,7 +24,6 @@ def regression(X_train, X_test, y_train, y_test):
     for actual, pred in zip(y_test, y_pred):  
      print(f"Actual: {actual:.2f}  |  Predicted: {pred:.2f}")
 
-# 4. Evaluation metrics
     mse = mean_squared_error(y_test, y_pred)
     rmse = np.sqrt(mse)
     mae = mean_absolute_error(y_test, y_pred)
@@ -54,3 +53,5 @@ X_train_Scone, X_test_Scone, y_train_Sconey, y_test_Scone = split(X_Scone, y_Sco
 regression(X_train_Pastry, X_test_Pastry, y_train_Pastry, y_test_Pastry)
 regression(X_train_Scone, X_test_Scone, y_train_Sconey, y_test_Scone)
 regression(X_train_Biscotti, X_test_Biscotti, y_train_Biscotti, y_test_Biscotti)
+
+
